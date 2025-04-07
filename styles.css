@@ -180,3 +180,30 @@ footer {
 .dark-mode .summary-card p:first-child { color: #00c4cc; }
 .dark-mode .summary-item:hover { box-shadow: 0 4px 8px rgba(255,255,255,0.1); }
 .dark-mode footer { background: #333; color: #bbb; border-top-color: #444; }
+
+/* Add this to the end of your existing styles.css */
+.cv-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #00c4cc; /* Teal from Minimal Mistakes */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    transition: background 0.2s ease;
+}
+
+.cv-button:hover {
+    background: #009ba1; /* Darker teal on hover */
+}
+
+/* Dark mode adjustment for CV button */
+.dark-mode .cv-button {
+    background: #00c4cc;
+}
+
+.dark-mode .cv-button:hover {
+    background: #009ba1;
+}
