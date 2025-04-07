@@ -1,0 +1,182 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #f5f5f5;
+    position: relative;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><line x1="0" y1="100" x2="200" y2="100" stroke="rgba(0,0,0,0.05)" stroke-width="1"/><line x1="100" y1="0" x2="100" y2="200" stroke="rgba(0,0,0,0.05)" stroke-width="1"/><circle cx="50" cy="50" r="2" fill="rgba(0,0,0,0.1)"/><circle cx="150" cy="150" r="2" fill="rgba(0,0,0,0.1)"/></svg>');
+    opacity: 0.5;
+}
+
+nav {
+    background: #fff;
+    border-bottom: 1px solid #e1e1e1;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #666;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #00c4cc;
+}
+
+.hero {
+    max-width: 1200px;
+    margin: 3rem auto 0;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    color: #333;
+    margin: 0 0 1rem;
+}
+
+.affiliation, .credentials, .intro {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0 0 0.5rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.portfolio-summary h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.8rem;
+    color: #333;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.summary-card {
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.summary-card p:first-child {
+    font-weight: bold;
+    color: #00c4cc;
+    margin-bottom: 0.5rem;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.summary-item {
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    transition: box-shadow 0.2s ease;
+}
+
+.summary-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.summary-item h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0 0 1rem;
+}
+
+.summary-item p, .summary-item ul {
+    font-size: 1rem;
+    color: #666;
+    margin: 0 0 1rem;
+}
+
+.summary-item ul {
+    padding-left: 1.5rem;
+}
+
+.summary-item ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #f5f5f5;
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #e1e1e1;
+}
+
+/* Dark Mode Adjustments */
+.dark-mode { background: #2d2d2d; color: #ddd; }
+.dark-mode header { background: #333; border-bottom-color: #444; }
+.dark-mode header::before { background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><line x1="0" y1="100" x2="200" y2="100" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="100" y1="0" x2="100" y2="200" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="150" cy="150" r="2" fill="rgba(255,255,255,0.1)"/></svg>'); }
+.dark-mode nav { background: #222; border-bottom-color: #333; }
+.dark-mode .site-title, .dark-mode .hero h1, .dark-mode h2, .dark-mode h3 { color: #fff; }
+.dark-mode nav a { color: #bbb; }
+.dark-mode nav a:hover { color: #00c4cc; }
+.dark-mode .affiliation, .dark-mode .intro, .dark-mode .summary-item p, .dark-mode .summary-item ul { color: #bbb; }
+.dark-mode .credentials { color: #888; }
+.dark-mode .summary-card, .dark-mode .summary-item { background: #333; border-color: #444; box-shadow: 0 2px 4px rgba(255,255,255,0.05); }
+.dark-mode .summary-card p:first-child { color: #00c4cc; }
+.dark-mode .summary-item:hover { box-shadow: 0 4px 8px rgba(255,255,255,0.1); }
+.dark-mode footer { background: #333; color: #bbb; border-top-color: #444; }
