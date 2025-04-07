@@ -18,13 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.toggle('dark-mode');
         toggle.textContent = document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
     });
-
-    // Dynamically encode CV link for GitHub Pages (optional, since no spaces in file name now)
-    const cvButton = document.querySelector('.cv-button');
-    if (cvButton) {
-        const rawFileName = "Ademola_Akorede_CV.PDF";
-        cvButton.href = encodeURI(rawFileName); // Ensures compatibility, though not strictly needed here
-    }
 });
 
 // Dark Mode Styles

@@ -618,3 +618,241 @@ footer {
 .dark-mode .skills-section table th {
     background: #444;
 }
+
+/* Projects Section */
+.projects {
+    padding: 3rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.projects-intro {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+}
+
+.project-item {
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.project-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+.project-item h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.8rem;
+    color: #00c4cc;
+    margin-bottom: 0.5rem;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+/* Dark Mode Adjustments */
+.dark-mode .projects h2 {
+    color: #fff;
+}
+
+.dark-mode .projects-intro,
+.dark-mode .project-item p {
+    color: #bbb;
+}
+
+.dark-mode .project-item {
+    background: #333;
+    border-color: #444;
+}
+
+.dark-mode .project-item:hover {
+    box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+}
+
+.dark-mode .project-item h3 {
+    color: #00c4cc;
+}
+
+/* Publications Section */
+.publications {
+    padding: 3rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.publications h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.publications-intro {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Coming Soon Animation */
+.coming-soon {
+    margin: 3rem 0;
+}
+
+.coming-soon-text {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    color: #00c4cc;
+    animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+.progress-bar {
+    width: 50%;
+    height: 10px;
+    background: #e1e1e1;
+    border-radius: 5px;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+
+.progress {
+    width: 78%; 
+    height: 100%;
+    background: #00c4cc;
+    border-radius: 5px;
+    animation: progressAnimation 3s infinite;
+}
+
+@keyframes progressAnimation {
+    0% { width: 0; }
+    100% { width: 60%; }
+}
+
+.coming-soon p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Embedded LinkedIn Posts Section */
+.linkedin-posts {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.linkedin-posts h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.linkedin-posts p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.linkedin-post {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.linkedin-post h4 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.linkedin-post iframe {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.linkedin-post p {
+    text-align: right;
+    margin: 0;
+}
+
+.linkedin-post p a {
+    color: #00c4cc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.linkedin-post p a:hover {
+    color: #009ba1;
+    text-decoration: underline;
+}
+
+/* Dark Mode Adjustments */
+.dark-mode .publications h2,
+.dark-mode .linkedin-posts h3,
+.dark-mode .linkedin-post h4 {
+    color: #fff;
+}
+
+.dark-mode .publications-intro,
+.dark-mode .coming-soon p,
+.dark-mode .linkedin-posts p {
+    color: #bbb;
+}
+
+.dark-mode .coming-soon-text {
+    color: #00c4cc;
+}
+
+.dark-mode .progress-bar {
+    background: #444;
+}
+
+.dark-mode .progress {
+    background: #00c4cc;
+}
+
+.dark-mode .linkedin-posts {
+    background: #333;
+    border-color: #444;
+    box-shadow: 0 2px 4px rgba(255,255,255,0.1);
+}
+
+.dark-mode .linkedin-post p a {
+    color: #00c4cc;
+}
+
+.dark-mode .linkedin-post p a:hover {
+    color: #009ba1;
+}
